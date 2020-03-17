@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips</title>
+  <style>
+    textarea {
+      width: 500px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <textarea></textarea>
+  <button id="textarea-button" type="button">Submit</button>
+
+  <p id="all-caps"></p>
+
+  <script>
+
+    const textarea = document.querySelector('textarea');
+    const textareaButton = document.querySelector('#textarea-button');
+    const allCaps = document.querySelector('#all-caps');
+
+    textareaButton.addEventListener('click', function() {
+        allCaps.textContent = textarea.value.toLocaleUpperCase();
+    });
+
+  </script>
+</body>
+</html>

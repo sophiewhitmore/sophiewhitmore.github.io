@@ -6,7 +6,6 @@ button.addEventListener('click', () => {
 });
 
 
-
 // const button = document.querySelector('button');
 // button.addEventListener('click', () => {
 //     alert('Would you like to go to a different webpage?')
